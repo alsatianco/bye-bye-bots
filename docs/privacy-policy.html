@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bye Bye Bots — Privacy Policy</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px auto; max-width: 900px; padding: 0 16px; line-height: 1.5; }
+    h1,h2 { line-height: 1.2; }
+    code { background: #f3f3f3; padding: 2px 6px; border-radius: 4px; }
+    .muted { color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Bye Bye Bots — Privacy Policy</h1>
+  <p class="muted"><strong>Last updated:</strong> 2026-02-15</p>
+
+  <p>Bye Bye Bots is a Chrome extension that helps block access to selected AI chat websites and hide AI features on certain search engines.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>Bye Bye Bots does <strong>not</strong> sell, share, or transfer personal data to third parties.</li>
+    <li>Bye Bye Bots does <strong>not</strong> use analytics or advertising trackers.</li>
+    <li>Bye Bye Bots does <strong>not</strong> send your browsing history to any server.</li>
+    <li>Settings are stored <strong>locally on your device</strong> using Chrome extension storage.</li>
+  </ul>
+
+  <h2>What data the extension accesses</h2>
+  <p>To do its job, the extension may observe the websites you navigate to so it can decide whether to block or allow a page.</p>
+  <ul>
+    <li><strong>Websites you visit (URL matching):</strong> used to determine whether a request matches a blocked/allowed domain.</li>
+    <li><strong>Extension settings:</strong> such as protection toggles, custom block list, allow list, and optional PIN lock.</li>
+  </ul>
+
+  <h2>What data the extension collects</h2>
+  <p>The extension stores the following locally (on-device) via <code>chrome.storage.local</code>:</p>
+  <ul>
+    <li>Global ON/OFF and feature toggles</li>
+    <li>Per-site toggles (Google/Bing/DuckDuckGo/YouTube)</li>
+    <li>Custom blocked domains and allow-list domains</li>
+    <li>Optional PIN lock state (stored as a salted SHA-256 hash; the PIN itself is not stored in plain text)</li>
+  </ul>
+
+  <h2>What data the extension does NOT collect</h2>
+  <ul>
+    <li>names, emails, phone numbers, or account identifiers</li>
+    <li>or transmit full browsing history</li>
+    <li>private message contents or form inputs</li>
+    <li>remote code execution (no externally hosted scripts)</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>Bye Bye Bots does not share data with any third parties.</p>
+
+  <h2>Data transfer</h2>
+  <p>Bye Bye Bots does not transmit personal data to a remote server.</p>
+
+  <h2>Data retention &amp; deletion</h2>
+  <p>All extension data is stored locally in your browser profile.</p>
+  <p>To delete the data:</p>
+  <ul>
+    <li>Open Chrome → Extensions → Bye Bye Bots → <strong>Remove</strong></li>
+    <li>Or keep the extension installed and clear its local data from the extension’s storage tools</li>
+  </ul>
+
+  <h2>Permissions explanation</h2>
+  <ul>
+    <li><code>declarativeNetRequest</code> / <code>declarativeNetRequestWithHostAccess</code>: to block or redirect navigation to blocked domains.</li>
+    <li><code>host_permissions</code> (<code>&lt;all_urls&gt;</code>): to apply blocking/allow rules to any domain you choose to add to your custom lists.</li>
+    <li><code>storage</code>: to save your settings locally.</li>
+  </ul>
+
+  <h2>Children / parental control use</h2>
+  <p>Bye Bye Bots is designed for parental control scenarios. It does not include behavioral advertising, profiling, or data monetization.</p>
+
+  <h2>Contact</h2>
+  <p>
+    <strong>Support email:</strong> (add your support email here)<br />
+    <strong>Project / homepage:</strong> (add your website or repo link here)
+  </p>
+</body>
+</html>

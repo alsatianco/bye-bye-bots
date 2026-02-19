@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bye Bye Bots</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <div class="header">
+      <span class="logo">🛡️</span>
+      <h1>Bye Bye Bots</h1>
+    </div>
+
+    <!-- PIN overlay (shown when PIN lock is enabled and toggling) -->
+    <div class="pin-overlay" id="pinOverlay" style="display: none;">
+      <p>Enter PIN to change settings</p>
+      <input type="password" id="pinInput" maxlength="8" placeholder="PIN" autocomplete="off">
+      <div class="pin-actions">
+        <button id="pinSubmit" class="btn btn-small btn-primary">Unlock</button>
+        <button id="pinCancel" class="btn btn-small btn-secondary">Cancel</button>
+      </div>
+      <p class="pin-error" id="pinError" style="display: none;">Incorrect PIN</p>
+    </div>
+
+    <!-- Main content -->
+    <div class="main" id="mainContent">
+      <div class="toggle-row">
+        <label class="toggle-label" for="globalToggle">Protection</label>
+        <label class="switch">
+          <input type="checkbox" id="globalToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="status" id="statusArea">
+        <p id="statusText">Loading…</p>
+      </div>
+
+      <div class="footer-link">
+        <a href="#" id="openOptions">⚙ Settings</a>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

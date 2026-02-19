@@ -1,0 +1,95 @@
+{
+  "manifest_version": 3,
+  "name": "Bye Bye Bots",
+  "version": "1.0.0",
+  "description": "Block AI chat sites and hide AI features on search engines. Parental control for AI.",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "static_block",
+        "enabled": true,
+        "path": "rules/static_block.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.google.co.th/search*",
+        "*://www.google.co.uk/search*",
+        "*://www.google.ca/search*",
+        "*://www.google.com.au/search*",
+        "*://www.google.de/search*",
+        "*://www.google.fr/search*",
+        "*://www.google.co.jp/search*",
+        "*://www.google.co.in/search*",
+        "*://www.google.com.br/search*"
+      ],
+      "js": ["content/packs.js", "content/engine.js", "content/google.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "*://www.bing.com/search*",
+        "*://www.bing.com/chat*",
+        "*://www.bing.com/*"
+      ],
+      "js": ["content/packs.js", "content/engine.js", "content/bing.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "*://duckduckgo.com/*"
+      ],
+      "js": ["content/packs.js", "content/engine.js", "content/duckduckgo.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "*://www.youtube.com/*"
+      ],
+      "js": ["content/packs.js", "content/engine.js", "content/youtube.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "incognito": "spanning",
+  "web_accessible_resources": [
+    {
+      "resources": ["ui/blocked.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

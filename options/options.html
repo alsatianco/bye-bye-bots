@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bye Bye Bots — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <span class="logo">🛡️</span>
+      <h1>Bye Bye Bots Settings</h1>
+    </header>
+
+    <!-- PIN gate (shown if PIN is enabled and not yet authenticated) -->
+    <section class="card pin-gate" id="pinGate" style="display: none;">
+      <h2>Enter PIN</h2>
+      <p>Settings are locked. Enter your PIN to continue.</p>
+      <div class="pin-row">
+        <input type="password" id="gatePinInput" maxlength="8" placeholder="PIN" autocomplete="off">
+        <button id="gatePinSubmit" class="btn btn-primary">Unlock</button>
+      </div>
+      <p class="error" id="gatePinError" style="display: none;">Incorrect PIN</p>
+    </section>
+
+    <!-- Settings (hidden until PIN verified or no PIN set) -->
+    <div id="settingsArea" style="display: none;">
+
+      <!-- Section 1: Protection -->
+      <section class="card">
+        <h2>Protection</h2>
+        <div class="setting-row">
+          <div>
+            <label for="globalEnabled">Global ON/OFF</label>
+            <p class="desc">Master switch for all protections</p>
+          </div>
+          <label class="switch"><input type="checkbox" id="globalEnabled"><span class="slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div>
+            <label for="blockFullSites">Block full AI chat sites</label>
+            <p class="desc">Redirect blocked AI domains to a friendly page</p>
+          </div>
+          <label class="switch"><input type="checkbox" id="blockFullSites"><span class="slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div>
+            <label for="blockPartialFeatures">Block AI features inside sites</label>
+            <p class="desc">Hide AI answers on Google, Bing, DuckDuckGo, etc.</p>
+          </div>
+          <label class="switch"><input type="checkbox" id="blockPartialFeatures"><span class="slider"></span></label>
+        </div>
+      </section>
+
+      <!-- Section 2: Site toggles -->
+      <section class="card">
+        <h2>Site Toggles</h2>
+        <p class="desc" style="margin-bottom:12px;">Choose which sites have AI features hidden</p>
+        <div class="setting-row">
+          <label for="toggleGoogle">Google Search</label>
+          <label class="switch"><input type="checkbox" id="toggleGoogle" data-site="google"><span class="slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <label for="toggleBing">Bing</label>
+          <label class="switch"><input type="checkbox" id="toggleBing" data-site="bing"><span class="slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <label for="toggleDuckDuckGo">DuckDuckGo</label>
+          <label class="switch"><input type="checkbox" id="toggleDuckDuckGo" data-site="duckduckgo"><span class="slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <label for="toggleYouTube">YouTube</label>
+          <label class="switch"><input type="checkbox" id="toggleYouTube" data-site="youtube"><span class="slider"></span></label>
+        </div>
+      </section>
+
+      <!-- Section 3: Block list -->
+      <section class="card">
+        <h2>Block List</h2>
+
+        <h3>Built-in blocked sites</h3>
+        <div class="tag-list" id="builtinList"></div>
+
+        <h3 style="margin-top:16px;">Custom blocked sites</h3>
+        <div class="add-row">
+          <input type="text" id="customBlockInput" placeholder="e.g. another-ai.com" autocomplete="off">
+          <button id="addCustomBlock" class="btn btn-primary">Add</button>
+        </div>
+        <div class="tag-list" id="customBlockList"></div>
+      </section>
+
+      <!-- Section 4: Allow list -->
+      <section class="card">
+        <h2>Allow List</h2>
+        <p class="desc" style="margin-bottom:12px;">These domains override blocks (useful for school-approved AI sites)</p>
+        <div class="add-row">
+          <input type="text" id="allowInput" placeholder="e.g. school.ai.example" autocomplete="off">
+          <button id="addAllow" class="btn btn-primary">Add</button>
+        </div>
+        <div class="tag-list" id="allowList"></div>
+      </section>
+
+      <!-- Section 5: PIN lock -->
+      <section class="card">
+        <h2>PIN Lock</h2>
+        <p class="desc" style="margin-bottom:12px;">Prevent casual toggling without a PIN</p>
+
+        <div id="pinSection">
+          <!-- Dynamic: set/change/disable PIN -->
+        </div>
+      </section>
+
+      <!-- Section 6: Info -->
+      <section class="card">
+        <h2>About</h2>
+        <p class="desc">Bye Bye Bots v1.0.0</p>
+        <p class="desc" style="margin-top:8px;color:#e74c3c;">
+          ⚠️ A determined teen can disable or remove extensions unless the browser profile or device is supervised/managed.
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          💡 Enable "Allow in incognito" in Chrome's extension settings for full coverage.
+        </p>
+        <div style="margin-top:12px;">
+          <button id="btnReportBroken" class="btn btn-secondary">Report Broken Block</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

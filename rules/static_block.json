@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=chatgpt.com" } },
+    "condition": { "urlFilter": "||chatgpt.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=chat.openai.com" } },
+    "condition": { "urlFilter": "||chat.openai.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=claude.ai" } },
+    "condition": { "urlFilter": "||claude.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=gemini.google.com" } },
+    "condition": { "urlFilter": "||gemini.google.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=poe.com" } },
+    "condition": { "urlFilter": "||poe.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=character.ai" } },
+    "condition": { "urlFilter": "||character.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=perplexity.ai" } },
+    "condition": { "urlFilter": "||perplexity.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=bard.google.com" } },
+    "condition": { "urlFilter": "||bard.google.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=copilot.microsoft.com" } },
+    "condition": { "urlFilter": "||copilot.microsoft.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=you.com" } },
+    "condition": { "urlFilter": "||you.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=pi.ai" } },
+    "condition": { "urlFilter": "||pi.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=huggingface.co/chat" } },
+    "condition": { "urlFilter": "||huggingface.co/chat", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=deepai.org" } },
+    "condition": { "urlFilter": "||deepai.org/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=writesonic.com" } },
+    "condition": { "urlFilter": "||writesonic.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=jasper.ai" } },
+    "condition": { "urlFilter": "||jasper.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=meta.ai" } },
+    "condition": { "urlFilter": "||meta.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=grok.com" } },
+    "condition": { "urlFilter": "||grok.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=deepseek.com" } },
+    "condition": { "urlFilter": "||deepseek.com/", "resourceTypes": ["main_frame"] }
+  },
+
+  {"id": 101, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chatgpt.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 102, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chat.openai.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 103, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||claude.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 104, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||gemini.google.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 105, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||poe.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 106, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||character.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 107, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||perplexity.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 108, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||bard.google.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 109, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||copilot.microsoft.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 110, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||you.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 111, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||pi.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 112, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||huggingface.co/chat", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 113, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||deepai.org/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 114, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||writesonic.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 115, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||jasper.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 116, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||meta.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 117, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||grok.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 118, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||deepseek.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }}
+]
