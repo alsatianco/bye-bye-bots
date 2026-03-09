@@ -13,9 +13,22 @@ Run through this checklist before every release.
 - [ ] Open `copilot.microsoft.com` → redirected to blocked page
 - [ ] Open `character.ai` → redirected to blocked page
 - [ ] Open `poe.com` → redirected to blocked page
-- [ ] Open `deepseek.com` → redirected to blocked page
+- [ ] Open `chat.deepseek.com` → redirected to blocked page
 - [ ] Open `grok.com` → redirected to blocked page
 - [ ] Open `meta.ai` → redirected to blocked page
+- [ ] Open `chat.mistral.ai` → redirected to blocked page
+- [ ] Open `chat.qwen.ai` → redirected to blocked page
+- [ ] Open `duck.ai` → redirected to blocked page
+- [ ] Open `venice.ai/chat` → redirected to blocked page
+- [ ] Open `kimi.com` → redirected to blocked page
+- [ ] Open `openrouter.ai/chat` → redirected to blocked page
+- [ ] Open `my.replika.com` → redirected to blocked page
+- [ ] Open `crushon.ai` → redirected to blocked page
+- [ ] Open `janitorai.com` → redirected to blocked page
+- [ ] Open `polybuzz.ai` → redirected to blocked page
+- [ ] Open `candy.ai` → redirected to blocked page
+- [ ] Open `spicychat.ai` → redirected to blocked page
+- [ ] Open `gptgirlfriend.online` → redirected to blocked page
 - [ ] Open blocked domain via search result click → redirected
 - [ ] Open blocked domain in a new tab → redirected
 - [ ] Open blocked domain in incognito (if "Allow in incognito" enabled) → redirected

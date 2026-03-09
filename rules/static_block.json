@@ -74,20 +74,20 @@
   {
     "id": 13,
     "priority": 1,
-    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=deepai.org" } },
-    "condition": { "urlFilter": "||deepai.org/", "resourceTypes": ["main_frame"] }
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=deepai.org/chat" } },
+    "condition": { "urlFilter": "||deepai.org/chat", "resourceTypes": ["main_frame"] }
   },
   {
     "id": 14,
     "priority": 1,
-    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=writesonic.com" } },
-    "condition": { "urlFilter": "||writesonic.com/", "resourceTypes": ["main_frame"] }
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=writesonic.com/chat" } },
+    "condition": { "urlFilter": "||writesonic.com/chat", "resourceTypes": ["main_frame"] }
   },
   {
     "id": 15,
     "priority": 1,
-    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=jasper.ai" } },
-    "condition": { "urlFilter": "||jasper.ai/", "resourceTypes": ["main_frame"] }
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=app.jasper.ai" } },
+    "condition": { "urlFilter": "||app.jasper.ai/", "resourceTypes": ["main_frame"] }
   },
   {
     "id": 16,
@@ -104,8 +104,194 @@
   {
     "id": 18,
     "priority": 1,
-    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=deepseek.com" } },
-    "condition": { "urlFilter": "||deepseek.com/", "resourceTypes": ["main_frame"] }
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=chat.deepseek.com" } },
+    "condition": { "urlFilter": "||chat.deepseek.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=chat.mistral.ai" } },
+    "condition": { "urlFilter": "||chat.mistral.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=chat.qwen.ai" } },
+    "condition": { "urlFilter": "||chat.qwen.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=iask.ai" } },
+    "condition": { "urlFilter": "||iask.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 22,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=duck.ai" } },
+    "condition": { "urlFilter": "||duck.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 23,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=app.blackbox.ai" } },
+    "condition": { "urlFilter": "||app.blackbox.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 24,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=genspark.ai" } },
+    "condition": { "urlFilter": "||genspark.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 25,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=my.replika.com" } },
+    "condition": { "urlFilter": "||my.replika.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 26,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=beta.nomi.ai" } },
+    "condition": { "urlFilter": "||beta.nomi.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 27,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=kindroid.ai" } },
+    "condition": { "urlFilter": "||kindroid.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 28,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=talkie-ai.com" } },
+    "condition": { "urlFilter": "||talkie-ai.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 29,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=crushon.ai" } },
+    "condition": { "urlFilter": "||crushon.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 30,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=janitorai.com" } },
+    "condition": { "urlFilter": "||janitorai.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 31,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=polybuzz.ai" } },
+    "condition": { "urlFilter": "||polybuzz.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 32,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=joyland.ai" } },
+    "condition": { "urlFilter": "||joyland.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 33,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=venice.ai/chat" } },
+    "condition": { "urlFilter": "||venice.ai/chat", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 34,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=kimi.com" } },
+    "condition": { "urlFilter": "||kimi.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 35,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=wrtn.ai" } },
+    "condition": { "urlFilter": "||wrtn.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 36,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=openrouter.ai/chat" } },
+    "condition": { "urlFilter": "||openrouter.ai/chat", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 37,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=t3.chat" } },
+    "condition": { "urlFilter": "||t3.chat/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 38,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=chatllm.abacus.ai" } },
+    "condition": { "urlFilter": "||chatllm.abacus.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 39,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=candy.ai" } },
+    "condition": { "urlFilter": "||candy.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 40,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=muah.ai" } },
+    "condition": { "urlFilter": "||muah.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 41,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=dreamgf.ai" } },
+    "condition": { "urlFilter": "||dreamgf.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 42,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=dreambf.ai" } },
+    "condition": { "urlFilter": "||dreambf.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 43,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=spicychat.ai" } },
+    "condition": { "urlFilter": "||spicychat.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 44,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=pephop.ai" } },
+    "condition": { "urlFilter": "||pephop.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 45,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=nectar.ai" } },
+    "condition": { "urlFilter": "||nectar.ai/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 46,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=fantasygf.com" } },
+    "condition": { "urlFilter": "||fantasygf.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 47,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=gptgirlfriend.online" } },
+    "condition": { "urlFilter": "||gptgirlfriend.online/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 48,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=lovescape.com" } },
+    "condition": { "urlFilter": "||lovescape.com/", "resourceTypes": ["main_frame"] }
+  },
+  {
+    "id": 49,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/ui/blocked.html?domain=chatfai.com" } },
+    "condition": { "urlFilter": "||chatfai.com/", "resourceTypes": ["main_frame"] }
   },
 
   {"id": 101, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chatgpt.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
@@ -120,10 +306,41 @@
   {"id": 110, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||you.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
   {"id": 111, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||pi.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
   {"id": 112, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||huggingface.co/chat", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
-  {"id": 113, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||deepai.org/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
-  {"id": 114, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||writesonic.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
-  {"id": 115, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||jasper.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 113, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||deepai.org/chat", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 114, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||writesonic.com/chat", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 115, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||app.jasper.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
   {"id": 116, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||meta.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
   {"id": 117, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||grok.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
-  {"id": 118, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||deepseek.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }}
+  {"id": 118, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chat.deepseek.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 119, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chat.mistral.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 120, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chat.qwen.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 121, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||iask.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 122, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||duck.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 123, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||app.blackbox.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 124, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||genspark.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 125, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||my.replika.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 126, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||beta.nomi.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 127, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||kindroid.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 128, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||talkie-ai.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 129, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||crushon.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 130, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||janitorai.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 131, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||polybuzz.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 132, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||joyland.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 133, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||venice.ai/chat", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 134, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||kimi.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 135, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||wrtn.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 136, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||openrouter.ai/chat", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 137, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||t3.chat/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 138, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chatllm.abacus.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 139, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||candy.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 140, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||muah.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 141, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||dreamgf.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 142, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||dreambf.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 143, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||spicychat.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 144, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||pephop.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 145, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||nectar.ai/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 146, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||fantasygf.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 147, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||gptgirlfriend.online/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 148, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||lovescape.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }},
+  {"id": 149, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "||chatfai.com/", "resourceTypes": ["xmlhttprequest", "sub_frame", "script"] }}
 ]

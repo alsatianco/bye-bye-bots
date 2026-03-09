@@ -14,8 +14,16 @@
     "chatgpt.com", "chat.openai.com", "claude.ai", "gemini.google.com",
     "poe.com", "character.ai", "perplexity.ai", "bard.google.com",
     "copilot.microsoft.com", "you.com", "pi.ai", "huggingface.co/chat",
-    "deepai.org", "writesonic.com", "jasper.ai", "meta.ai", "grok.com",
-    "deepseek.com"
+    "deepai.org/chat", "writesonic.com/chat", "app.jasper.ai", "meta.ai",
+    "grok.com", "chat.deepseek.com", "chat.mistral.ai", "chat.qwen.ai",
+    "iask.ai", "duck.ai", "app.blackbox.ai", "genspark.ai",
+    "my.replika.com", "beta.nomi.ai", "kindroid.ai", "talkie-ai.com",
+    "crushon.ai", "janitorai.com", "polybuzz.ai", "joyland.ai",
+    "venice.ai/chat", "kimi.com", "wrtn.ai", "openrouter.ai/chat",
+    "t3.chat", "chatllm.abacus.ai", "candy.ai", "muah.ai",
+    "dreamgf.ai", "dreambf.ai", "spicychat.ai", "pephop.ai",
+    "nectar.ai", "fantasygf.com", "gptgirlfriend.online",
+    "lovescape.com", "chatfai.com"
   ];
 
   /* ---------- DOM refs ---------- */
