@@ -15,28 +15,22 @@ const PACKS = {
   google: {
     key: "google",
     hideSelectors: [
-      // AI Overview container (multiple known variants)
-      "[data-aiid]",
-      "#m-x-content .kp-wholepage[data-attrid*='ai']",
-      ".M8OgIe .XGPnSe",          // AI Overview wrapper
-      ".ILfuVd[data-attrid*='AIChatEntryPoint']",
-      "[jsname='N760bc']",          // AI overview block
-      "#arc-srp",                   // AI arc panel
-      "[data-q-a-id]",             // AI Q&A
-      ".bS2gfe",                   // AI chat entry
+      // Only AI Mode panels / chips — NOT AI Overview content
       ".eKPi4",                    // AI mode panel
       ".Wt5Tfe",                   // AI mode suggestion chips
-      "div[data-hveid] div[data-initq]", // AI overview with init query
-      ".kQdGHd",                   // AI suggestions container
-      ".LWkfKe .vdQmEd",          // Generative AI experience container
-      ".FYIRhc",                   // AI answer container variant
+      // AI Mode promo / entry point containers
+      "[data-attrid*='AIMode']",
+      "[data-attrid*='AiMode']",
+      "[data-attrid*='ai_mode']",
     ],
     removeSelectors: [
       // "AI Mode" button / tab / chip
       "a[href*='udm=50']",        // AI Mode link/tab
-      "[data-loeid='AIChatEntryPoint']",
       ".T2Ycoe [data-sml*='ai']", // AI search mode button
       ".GZKQnc",                   // AI mode tab
+      // Broader AI Mode entry points (Edge / variant UIs)
+      "button[data-enable_aml]",   // AI mode launch button
+      "[jsaction*='aiMode']",      // JS-action AI mode buttons
     ],
     heuristicTexts: ["AI Overview", "AI Mode", "Generative AI is experimental"],
   },

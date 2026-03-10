@@ -168,6 +168,31 @@ async function syncRulesets(state) {
     }
   }
 
+  // Google AI mode blocking (strips udm=50 from Google search URLs)
+  // Tied to blockPartialFeatures + google site toggle, independent of blockFullSites
+  if (state.enabled &&
+      state.blockPartialFeatures !== false &&
+      (state.siteToggles || {}).google !== false) {
+    addRules.push({
+      id: 9000,
+      priority: 2,
+      action: {
+        type: "redirect",
+        redirect: {
+          transform: {
+            queryTransform: {
+              removeParams: ["udm"]
+            }
+          }
+        }
+      },
+      condition: {
+        regexFilter: "^https?://www\\.google\\.[a-z.]+/search\\?([^#]*&)?udm=50([&#]|$)",
+        resourceTypes: ["main_frame"]
+      }
+    });
+  }
+
   try {
     await chrome.declarativeNetRequest.updateDynamicRules({
       removeRuleIds: removeIds,
@@ -183,7 +208,7 @@ async function syncRulesets(state) {
 chrome.storage.onChanged.addListener(async (changes, area) => {
   if (area !== "local") return;
   // Re-sync rules whenever relevant settings change
-  const relevant = ["enabled", "blockFullSites", "customBlockDomains", "allowDomains"];
+  const relevant = ["enabled", "blockFullSites", "blockPartialFeatures", "siteToggles", "customBlockDomains", "allowDomains"];
   if (relevant.some(k => k in changes)) {
     await syncRulesets();
   }
